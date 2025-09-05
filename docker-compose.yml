@@ -14,6 +14,11 @@ services:
       - DB_POSTGRESDB_PASSWORD=n8n_password
       - NODE_FUNCTION_ALLOW_EXTERNAL=pg
       - PORT=5555
+      - N8N_EDITOR_BASE_URL=https://n8n-railway-production-f603.up.railway.app/
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - WEBHOOK_URL=https://n8n-railway-production-f603.up.railway.app/
+      - WEBHOOK_TUNNEL_URL=https://n8n-railway-production-f603.up.railway.app/
+
     ports:
       - "5555:5555"
     depends_on:
