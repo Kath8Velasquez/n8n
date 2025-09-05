@@ -16,6 +16,7 @@ services:
       - PORT=5555
       - N8N_EDITOR_BASE_URL=https://n8n-railway-production-f603.up.railway.app/
       - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_HOST=n8n-railway-production-f603.up.railway.app
       - WEBHOOK_URL=https://n8n-railway-production-f603.up.railway.app/
       - WEBHOOK_TUNNEL_URL=https://n8n-railway-production-f603.up.railway.app/
 
