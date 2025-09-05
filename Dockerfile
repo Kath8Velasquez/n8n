@@ -12,7 +12,7 @@ RUN apk --update add --virtual build-dependencies python3 build-base && \
 
 WORKDIR /data
 
-EXPOSE 5678    # Default n8n port
+EXPOSE 5678
 
 ENV N8N_USER_ID=root
 
