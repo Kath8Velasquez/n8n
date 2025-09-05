@@ -1,7 +1,6 @@
 FROM node:20-alpine
 
-# Option to set the N8N version
-ARG N8N_VERSION=1.72.0  # Update with the latest stable version available
+ARG N8N_VERSION=1.106.3
 
 RUN apk add --update graphicsmagick tzdata
 
