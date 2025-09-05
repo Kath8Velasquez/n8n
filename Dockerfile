@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node20-alpine
 
 ARG N8N_VERSION=1.106.3
 
@@ -12,8 +12,8 @@ RUN apk --update add --virtual build-dependencies python3 build-base && \
 
 WORKDIR /data
 
-EXPOSE 5678
+EXPOSE $PORT
 
 ENV N8N_USER_ID=root
 
-CMD ["n8n", "start"]
+CMD export N8N_PORT=$PORT && n8n start
